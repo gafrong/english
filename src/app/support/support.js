@@ -1,23 +1,23 @@
-angular.module( 'App.about', [
+angular.module( 'App.support', [
   'ui.router',
   'placeholders',
   'ui.bootstrap'
 ])
 
 .config(function config( $stateProvider ) {
-  $stateProvider.state( 'about', {
-    url: '/about',
+  $stateProvider.state( 'support', {
+    url: '/support',
     views: {
       "main": {
-        controller: 'AboutCtrl',
-        templateUrl: 'about/about.tpl.html'
+        controller: 'SupportCtrl',
+        templateUrl: 'support/support.tpl.html'
       }
     },
-    data:{ pageTitle: 'About' }
+    data:{ pageTitle: 'Support' }
   });
 })
 
-.controller( 'AboutCtrl', function AboutCtrl( $scope ) {
+.controller( 'SupportCtrl', function SupportCtrl( $scope ) {
   // This is simple a demo for UI Boostrap.
   $scope.dropdownDemoItems = [
     "The first choice!",
