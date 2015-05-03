@@ -1,0 +1,72 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '--production' ]
+2 info using npm@2.7.3
+3 info using node@v0.10.33
+4 warn package.json ngbp@0.3.2 No description
+5 verbose install where, deps [ '/Users/gafrong/Development/toodoo', [] ]
+6 verbose install where, peers [ '/Users/gafrong/Development/toodoo', [] ]
+7 info preinstall ngbp@0.3.2
+8 warn package.json karma-coffee-preprocessor@0.2.1 No README data
+9 warn package.json karma-firefox-launcher@0.1.4 No README data
+10 silly install resolved []
+11 info build /Users/gafrong/Development/toodoo
+12 verbose linkStuff [ false, false, false, '/Users/gafrong/Development' ]
+13 info linkStuff ngbp@0.3.2
+14 verbose linkBins ngbp@0.3.2
+15 verbose linkMans ngbp@0.3.2
+16 verbose rebuildBundles ngbp@0.3.2
+17 verbose rebuildBundles [ '.bin',
+17 verbose rebuildBundles   'coffeelint',
+17 verbose rebuildBundles   'grunt',
+17 verbose rebuildBundles   'grunt-bump',
+17 verbose rebuildBundles   'grunt-coffeelint',
+17 verbose rebuildBundles   'grunt-contrib-clean',
+17 verbose rebuildBundles   'grunt-contrib-coffee',
+17 verbose rebuildBundles   'grunt-contrib-concat',
+17 verbose rebuildBundles   'grunt-contrib-copy',
+17 verbose rebuildBundles   'grunt-contrib-jshint',
+17 verbose rebuildBundles   'grunt-contrib-less',
+17 verbose rebuildBundles   'grunt-contrib-uglify',
+17 verbose rebuildBundles   'grunt-contrib-watch',
+17 verbose rebuildBundles   'grunt-conventional-changelog',
+17 verbose rebuildBundles   'grunt-html2js',
+17 verbose rebuildBundles   'grunt-karma',
+17 verbose rebuildBundles   'grunt-ng-annotate',
+17 verbose rebuildBundles   'karma',
+17 verbose rebuildBundles   'karma-coffee-preprocessor',
+17 verbose rebuildBundles   'karma-firefox-launcher',
+17 verbose rebuildBundles   'karma-jasmine' ]
+18 verbose rebuild bundle /Users/gafrong/Development/toodoo/node_modules/coffeelint
+19 info build /Users/gafrong/Development/toodoo/node_modules/coffeelint
+20 info preinstall coffeelint@1.9.4
+21 verbose linkStuff [ false,
+21 verbose linkStuff   false,
+21 verbose linkStuff   false,
+21 verbose linkStuff   '/Users/gafrong/Development/toodoo/node_modules' ]
+22 info linkStuff coffeelint@1.9.4
+23 verbose linkBins coffeelint@1.9.4
+24 verbose link bins [ { coffeelint: './bin/coffeelint' },
+24 verbose link bins   '/Users/gafrong/Development/toodoo/node_modules/.bin',
+24 verbose link bins   false ]
+25 verbose linkMans coffeelint@1.9.4
+26 verbose rebuildBundles coffeelint@1.9.4
+27 verbose rebuildBundles [ '.bin', 'coffee-script', 'glob', 'ignore', 'optimist', 'resolve' ]
+28 silly gentlyRm /Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint is being purged
+29 verbose gentlyRm don't care about contents; nuking /Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint
+30 silly vacuum-fs purging /Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint
+31 verbose stack Error: EACCES, unlink '/Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint'
+32 verbose cwd /Users/gafrong/Development/toodoo
+33 error Darwin 14.1.0
+34 error argv "node" "/usr/local/bin/npm" "install" "--production"
+35 error node v0.10.33
+36 error npm  v2.7.3
+37 error path /Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint
+38 error code EACCES
+39 error errno 3
+40 error Error: EACCES, unlink '/Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint'
+40 error  { [Error: EACCES, unlink '/Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint']
+40 error   errno: 3,
+40 error   code: 'EACCES',
+40 error   path: '/Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint' }
+41 error Please try running this command again as root/Administrator.
+42 verbose exit [ 3, true ]
