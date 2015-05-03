@@ -1,0 +1,158 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-autoprefixer',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.7.3
+3 info using node@v0.10.33
+4 warn package.json englishkor@0.3.2 No description
+5 warn package.json karma-coffee-preprocessor@0.2.1 No README data
+6 warn package.json karma-firefox-launcher@0.1.4 No README data
+7 silly cache add args [ 'grunt-autoprefixer', null ]
+8 verbose cache add spec grunt-autoprefixer
+9 silly cache add parsed spec { raw: 'grunt-autoprefixer',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'grunt-autoprefixer',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed grunt-autoprefixer@*
+11 silly addNamed semver.valid null
+12 silly addNamed semver.validRange *
+13 silly addNameRange { name: 'grunt-autoprefixer', range: '*', hasData: false }
+14 silly mapToRegistry name grunt-autoprefixer
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/grunt-autoprefixer
+18 verbose addNameRange registry:https://registry.npmjs.org/grunt-autoprefixer not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/grunt-autoprefixer
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 20:09:51
+22 verbose request id 4ecaf6259c648c28
+23 verbose etag "6D5O6RQ4YCDC4YUXY0MD6JT2A"
+24 http request GET https://registry.npmjs.org/grunt-autoprefixer
+25 http 304 https://registry.npmjs.org/grunt-autoprefixer
+26 silly get cb [ 304,
+26 silly get   { date: 'Sun, 03 May 2015 10:09:52 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     'cache-control': 'max-age=60',
+26 silly get     etag: '"6D5O6RQ4YCDC4YUXY0MD6JT2A"',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-syd1621-SYD',
+26 silly get     'x-cache': 'HIT',
+26 silly get     'x-cache-hits': '1',
+26 silly get     'x-timer': 'S1430647792.327529,VS0,VE786',
+26 silly get     vary: 'Accept' } ]
+27 verbose etag https://registry.npmjs.org/grunt-autoprefixer from cache
+28 verbose get saving grunt-autoprefixer to /Users/gafrong/.npm/registry.npmjs.org/grunt-autoprefixer/.cache.json
+29 silly addNameRange number 2 { name: 'grunt-autoprefixer', range: '*', hasData: true }
+30 silly addNameRange versions [ 'grunt-autoprefixer',
+30 silly addNameRange   [ '0.1.0',
+30 silly addNameRange     '0.1.20130424',
+30 silly addNameRange     '0.1.20130516',
+30 silly addNameRange     '0.1.20130615',
+30 silly addNameRange     '0.2.0',
+30 silly addNameRange     '0.2.20130718',
+30 silly addNameRange     '0.2.20130806',
+30 silly addNameRange     '0.3.0',
+30 silly addNameRange     '0.3.1',
+30 silly addNameRange     '0.4.0',
+30 silly addNameRange     '0.4.1',
+30 silly addNameRange     '0.4.2',
+30 silly addNameRange     '0.5.0',
+30 silly addNameRange     '0.6.0',
+30 silly addNameRange     '0.6.1',
+30 silly addNameRange     '0.6.2',
+30 silly addNameRange     '0.6.3',
+30 silly addNameRange     '0.6.4',
+30 silly addNameRange     '0.6.5',
+30 silly addNameRange     '0.7.0',
+30 silly addNameRange     '0.7.1',
+30 silly addNameRange     '0.7.2',
+30 silly addNameRange     '0.7.3',
+30 silly addNameRange     '0.7.4',
+30 silly addNameRange     '0.7.5',
+30 silly addNameRange     '0.7.6',
+30 silly addNameRange     '0.8.0',
+30 silly addNameRange     '0.8.1',
+30 silly addNameRange     '0.8.2',
+30 silly addNameRange     '1.0.0',
+30 silly addNameRange     '1.0.1',
+30 silly addNameRange     '2.0.0',
+30 silly addNameRange     '2.1.0',
+30 silly addNameRange     '2.2.0',
+30 silly addNameRange     '3.0.0' ] ]
+31 verbose addNamed grunt-autoprefixer@3.0.0
+32 silly addNamed semver.valid 3.0.0
+33 silly addNamed semver.validRange 3.0.0
+34 silly cache afterAdd grunt-autoprefixer@3.0.0
+35 verbose afterAdd /Users/gafrong/.npm/grunt-autoprefixer/3.0.0/package/package.json not in flight; writing
+36 verbose afterAdd /Users/gafrong/.npm/grunt-autoprefixer/3.0.0/package/package.json written
+37 silly install resolved [ { name: 'grunt-autoprefixer',
+37 silly install resolved     version: '3.0.0',
+37 silly install resolved     description: 'Parse CSS and add vendor-prefixed CSS properties using the Can I Use database. Based on Autoprefixer.',
+37 silly install resolved     author: { name: 'Dmitry Nikitenko', email: 'dima.nikitenko@gmail.com' },
+37 silly install resolved     repository:
+37 silly install resolved      { type: 'git',
+37 silly install resolved        url: 'https://github.com/nDmitry/grunt-autoprefixer' },
+37 silly install resolved     license: 'MIT',
+37 silly install resolved     engines: { node: '>= 0.10.0' },
+37 silly install resolved     scripts: { test: 'grunt test' },
+37 silly install resolved     keywords: [ 'gruntplugin', 'css', 'postprocessor', 'prefix', 'autoprefixer' ],
+37 silly install resolved     files: [ 'tasks', 'LICENSE' ],
+37 silly install resolved     dependencies:
+37 silly install resolved      { 'autoprefixer-core': '^5.1.7',
+37 silly install resolved        diff: '~1.3.0',
+37 silly install resolved        chalk: '~1.0.0' },
+37 silly install resolved     devDependencies:
+37 silly install resolved      { grunt: '~0.4.4',
+37 silly install resolved        'grunt-contrib-jshint': '~0.10.0',
+37 silly install resolved        'grunt-contrib-clean': '~0.6.0',
+37 silly install resolved        'grunt-contrib-nodeunit': '~0.4.0',
+37 silly install resolved        'grunt-contrib-copy': '~0.7.0',
+37 silly install resolved        'load-grunt-tasks': '~2.0.0',
+37 silly install resolved        'time-grunt': '~1.0.0' },
+37 silly install resolved     peerDependencies: { grunt: '~0.4.2' },
+37 silly install resolved     gitHead: '6f8dfe8840c48a394da478c553eb4748c4ffc79b',
+37 silly install resolved     bugs: { url: 'https://github.com/nDmitry/grunt-autoprefixer/issues' },
+37 silly install resolved     homepage: 'https://github.com/nDmitry/grunt-autoprefixer',
+37 silly install resolved     _id: 'grunt-autoprefixer@3.0.0',
+37 silly install resolved     _shasum: 'df61b662f06c4bfd93cf659ef6d706faf0153755',
+37 silly install resolved     _from: 'grunt-autoprefixer@*',
+37 silly install resolved     _npmVersion: '2.7.4',
+37 silly install resolved     _nodeVersion: '0.10.38',
+37 silly install resolved     _npmUser: { name: 'weiss', email: 'dima.nikitenko@gmail.com' },
+37 silly install resolved     maintainers: [ [Object] ],
+37 silly install resolved     dist:
+37 silly install resolved      { shasum: 'df61b662f06c4bfd93cf659ef6d706faf0153755',
+37 silly install resolved        tarball: 'http://registry.npmjs.org/grunt-autoprefixer/-/grunt-autoprefixer-3.0.0.tgz' },
+37 silly install resolved     directories: {},
+37 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-autoprefixer/-/grunt-autoprefixer-3.0.0.tgz',
+37 silly install resolved     readme: 'ERROR: No README data found!' } ]
+38 info install grunt-autoprefixer@3.0.0 into /Users/gafrong/Development/toodoo
+39 info installOne grunt-autoprefixer@3.0.0
+40 verbose installOne of grunt-autoprefixer to /Users/gafrong/Development/toodoo not in flight; installing
+41 warn locking Error: EACCES, open '/Users/gafrong/.npm/_locks/grunt-autoprefixer-61f9b599971b31c9.lock'
+41 warn locking  /Users/gafrong/.npm/_locks/grunt-autoprefixer-61f9b599971b31c9.lock failed { [Error: EACCES, open '/Users/gafrong/.npm/_locks/grunt-autoprefixer-61f9b599971b31c9.lock']
+41 warn locking   errno: 3,
+41 warn locking   code: 'EACCES',
+41 warn locking   path: '/Users/gafrong/.npm/_locks/grunt-autoprefixer-61f9b599971b31c9.lock' }
+42 verbose stack Error: Attempt to unlock /Users/gafrong/Development/toodoo/node_modules/grunt-autoprefixer, which hasn't been locked
+42 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
+42 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1004:5)
+42 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1008:20
+42 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
+42 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
+42 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
+42 verbose stack     at Object.oncomplete (fs.js:107:15)
+43 verbose cwd /Users/gafrong/Development/toodoo
+44 error Darwin 14.1.0
+45 error argv "node" "/usr/local/bin/npm" "install" "grunt-autoprefixer" "--save-dev"
+46 error node v0.10.33
+47 error npm  v2.7.3
+48 error Attempt to unlock /Users/gafrong/Development/toodoo/node_modules/grunt-autoprefixer, which hasn't been locked
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
