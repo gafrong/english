@@ -582,7 +582,7 @@ module.exports = function ( grunt ) {
     'less:compile', 'copy:compile_assets', 'ngAnnotate', 'concat:compile_js', 'uglify', 'index:compile'
   ]);
 
-  grunt.registerTask('heroku:production', ['compass:dist', 'autoprefixer', 'imagemin']);
+  grunt.registerTask('heroku:production', ['autoprefixer', 'imagemin']);
 
   /**
    * A utility function to get all app JavaScript sources.
