@@ -2,17 +2,15 @@
   "author": "Ji Lee",
   "name": "englishkor",
   "version": "0.3.2",
-  "homepage": "https://github.com/gafrong",
   "licenses": {
     "type": "MIT"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:ngbp/ngbp.git"
   },
   "dependencies": {
     "express": "^4.12.3"
   },
+  "engines": {
+    "node": "0.12.2"
+  }, 
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-bump": "0.0.6",

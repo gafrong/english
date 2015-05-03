@@ -1,141 +1,113 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'grunt-init' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
 2 info using npm@2.7.3
 3 info using node@v0.10.33
-4 silly cache add args [ 'grunt-init', null ]
-5 verbose cache add spec grunt-init
-6 silly cache add parsed spec { raw: 'grunt-init',
-6 silly cache add   scope: null,
-6 silly cache add   name: 'grunt-init',
-6 silly cache add   rawSpec: '',
-6 silly cache add   spec: '*',
-6 silly cache add   type: 'range' }
-7 verbose addNamed grunt-init@*
-8 silly addNamed semver.valid null
-9 silly addNamed semver.validRange *
-10 silly addNameRange { name: 'grunt-init', range: '*', hasData: false }
-11 silly mapToRegistry name grunt-init
-12 silly mapToRegistry using default registry
-13 silly mapToRegistry registry https://registry.npmjs.org/
-14 silly mapToRegistry uri https://registry.npmjs.org/grunt-init
-15 verbose addNameRange registry:https://registry.npmjs.org/grunt-init not in flight; fetching
-16 verbose request uri https://registry.npmjs.org/grunt-init
-17 verbose request no auth needed
-18 info attempt registry request try #1 at 21:03:48
-19 verbose request id 543ba437a4a71fb4
-20 http request GET https://registry.npmjs.org/grunt-init
-21 http 200 https://registry.npmjs.org/grunt-init
-22 silly get cb [ 200,
-22 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-22 silly get     etag: '"EDRXM2DSLL20YG3PHBA10ECN6"',
-22 silly get     'content-type': 'application/json',
-22 silly get     'cache-control': 'max-age=60',
-22 silly get     'content-length': '20700',
-22 silly get     'accept-ranges': 'bytes',
-22 silly get     date: 'Sun, 03 May 2015 11:03:49 GMT',
-22 silly get     via: '1.1 varnish',
-22 silly get     age: '0',
-22 silly get     connection: 'keep-alive',
-22 silly get     'x-served-by': 'cache-syd1627-SYD',
-22 silly get     'x-cache': 'MISS',
-22 silly get     'x-cache-hits': '0',
-22 silly get     'x-timer': 'S1430651028.592375,VS0,VE1133',
-22 silly get     vary: 'Accept' } ]
-23 verbose get saving grunt-init to /Users/gafrong/.npm/registry.npmjs.org/grunt-init/.cache.json
-24 silly addNameRange number 2 { name: 'grunt-init', range: '*', hasData: true }
-25 silly addNameRange versions [ 'grunt-init',
-25 silly addNameRange   [ '0.1.0',
-25 silly addNameRange     '0.2.0',
-25 silly addNameRange     '0.2.1',
-25 silly addNameRange     '0.3.0',
-25 silly addNameRange     '0.2.0-rc1',
-25 silly addNameRange     '0.2.0-rc2',
-25 silly addNameRange     '0.2.0-rc3',
-25 silly addNameRange     '0.2.0-rc4',
-25 silly addNameRange     '0.2.0-rc5',
-25 silly addNameRange     '0.2.0-rc6',
-25 silly addNameRange     '0.2.0-rc7',
-25 silly addNameRange     '0.2.0-rc8',
-25 silly addNameRange     '0.3.1',
-25 silly addNameRange     '0.3.2' ] ]
-26 verbose addNamed grunt-init@0.3.2
-27 silly addNamed semver.valid 0.3.2
-28 silly addNamed semver.validRange 0.3.2
-29 silly mapToRegistry name grunt-init
-30 silly mapToRegistry using default registry
-31 silly mapToRegistry registry https://registry.npmjs.org/
-32 silly mapToRegistry uri https://registry.npmjs.org/grunt-init
-33 verbose addRemoteTarball https://registry.npmjs.org/grunt-init/-/grunt-init-0.3.2.tgz not in flight; adding
-34 verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt-init/-/grunt-init-0.3.2.tgz',
-34 verbose addRemoteTarball   '0062d318401cfc703db394aa9f8b9e7770809984' ]
-35 info retry fetch attempt 1 at 21:03:49
-36 info attempt registry request try #1 at 21:03:49
-37 http fetch GET https://registry.npmjs.org/grunt-init/-/grunt-init-0.3.2.tgz
-38 http fetch 200 https://registry.npmjs.org/grunt-init/-/grunt-init-0.3.2.tgz
-39 silly fetchAndShaCheck shasum 0062d318401cfc703db394aa9f8b9e7770809984
-40 verbose addTmpTarball /var/folders/cv/yy78rb7d41sb4mh18cj9dhmr0000gn/T/npm-25290-4ee50f0e/registry.npmjs.org/grunt-init/-/grunt-init-0.3.2.tgz not in flight; adding
-41 verbose addTmpTarball already have metadata; skipping unpack for grunt-init@0.3.2
-42 silly cache afterAdd grunt-init@0.3.2
-43 verbose afterAdd /Users/gafrong/.npm/grunt-init/0.3.2/package/package.json not in flight; writing
-44 verbose afterAdd /Users/gafrong/.npm/grunt-init/0.3.2/package/package.json written
-45 silly install resolved [ { name: 'grunt-init',
-45 silly install resolved     description: 'Generate project scaffolding from a template.',
-45 silly install resolved     version: '0.3.2',
-45 silly install resolved     homepage: 'https://github.com/gruntjs/grunt-init',
-45 silly install resolved     author: { name: 'Grunt Team', url: 'http://gruntjs.com/' },
-45 silly install resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt-init.git' },
-45 silly install resolved     bugs: { url: 'https://github.com/gruntjs/grunt-init/issues' },
-45 silly install resolved     licenses: [ [Object] ],
-45 silly install resolved     preferGlobal: true,
-45 silly install resolved     bin: { 'grunt-init': 'bin/grunt-init' },
-45 silly install resolved     engines: { node: '>= 0.8.0' },
-45 silly install resolved     scripts: { test: 'grunt test' },
-45 silly install resolved     dependencies:
-45 silly install resolved      { prompt: '~0.1.12',
-45 silly install resolved        semver: '~1.0.14',
-45 silly install resolved        hooker: '~0.2.3',
-45 silly install resolved        colors: '~0.6.0-1',
-45 silly install resolved        grunt: '~0.4.0',
-45 silly install resolved        lodash: '~2.4.1',
-45 silly install resolved        async: '~0.2.10' },
-45 silly install resolved     devDependencies:
-45 silly install resolved      { 'grunt-contrib-jshint': '~0.8.0',
-45 silly install resolved        'grunt-contrib-nodeunit': '~0.3.0' },
-45 silly install resolved     keywords: [ 'grunt', 'template', 'scaffold', 'generate', 'project' ],
-45 silly install resolved     contributors: [ [Object] ],
-45 silly install resolved     _id: 'grunt-init@0.3.2',
-45 silly install resolved     dist:
-45 silly install resolved      { shasum: '0062d318401cfc703db394aa9f8b9e7770809984',
-45 silly install resolved        tarball: 'http://registry.npmjs.org/grunt-init/-/grunt-init-0.3.2.tgz' },
-45 silly install resolved     _from: 'grunt-init@*',
-45 silly install resolved     _npmVersion: '1.4.3',
-45 silly install resolved     _npmUser: { name: 'vladikoff', email: 'vlad@vladikoff.com' },
-45 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
-45 silly install resolved     directories: {},
-45 silly install resolved     _shasum: '0062d318401cfc703db394aa9f8b9e7770809984',
-45 silly install resolved     _resolved: 'https://registry.npmjs.org/grunt-init/-/grunt-init-0.3.2.tgz' } ]
-46 info install grunt-init@0.3.2 into /usr/local/lib
-47 info installOne grunt-init@0.3.2
-48 verbose installOne of grunt-init to /usr/local/lib not in flight; installing
-49 warn locking Error: EACCES, open '/Users/gafrong/.npm/_locks/grunt-init-6cff7fa36e94429b.lock'
-49 warn locking  /Users/gafrong/.npm/_locks/grunt-init-6cff7fa36e94429b.lock failed { [Error: EACCES, open '/Users/gafrong/.npm/_locks/grunt-init-6cff7fa36e94429b.lock']
-49 warn locking   errno: 3,
-49 warn locking   code: 'EACCES',
-49 warn locking   path: '/Users/gafrong/.npm/_locks/grunt-init-6cff7fa36e94429b.lock' }
-50 verbose stack Error: Attempt to unlock /usr/local/lib/node_modules/grunt-init, which hasn't been locked
-50 verbose stack     at unlock (/usr/local/lib/node_modules/npm/lib/utils/locker.js:66:11)
-50 verbose stack     at cb (/usr/local/lib/node_modules/npm/lib/install.js:1004:5)
-50 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:1008:20
-50 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/locker.js:40:9
-50 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:149:38)
-50 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/lockfile/lockfile.js:177:38
-50 verbose stack     at Object.oncomplete (fs.js:107:15)
-51 verbose cwd /Users/gafrong/Development/toodoo
-52 error Darwin 14.1.0
-53 error argv "node" "/usr/local/bin/npm" "install" "-g" "grunt-init"
-54 error node v0.10.33
-55 error npm  v2.7.3
-56 error Attempt to unlock /usr/local/lib/node_modules/grunt-init, which hasn't been locked
-57 error If you need help, you may report this error at:
-57 error     <https://github.com/npm/npm/issues>
-58 verbose exit [ 1, true ]
+4 warn package.json englishkor@0.3.2 No description
+5 verbose install where, deps [ '/Users/gafrong/Development/toodoo',
+5 verbose install   [ 'express',
+5 verbose install     'grunt',
+5 verbose install     'grunt-bump',
+5 verbose install     'grunt-coffeelint',
+5 verbose install     'grunt-contrib-clean',
+5 verbose install     'grunt-contrib-coffee',
+5 verbose install     'grunt-contrib-concat',
+5 verbose install     'grunt-contrib-copy',
+5 verbose install     'grunt-contrib-jshint',
+5 verbose install     'grunt-contrib-less',
+5 verbose install     'grunt-contrib-uglify',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'grunt-conventional-changelog',
+5 verbose install     'grunt-html2js',
+5 verbose install     'grunt-karma',
+5 verbose install     'grunt-ng-annotate',
+5 verbose install     'karma',
+5 verbose install     'karma-coffee-preprocessor',
+5 verbose install     'karma-firefox-launcher',
+5 verbose install     'karma-jasmine' ] ]
+6 verbose install where, peers [ '/Users/gafrong/Development/toodoo', [] ]
+7 info preinstall englishkor@0.3.2
+8 warn package.json karma-coffee-preprocessor@0.2.1 No README data
+9 warn package.json karma-firefox-launcher@0.1.4 No README data
+10 verbose already installed skipping grunt-contrib-copy@^0.4.1 /Users/gafrong/Development/toodoo
+11 verbose already installed skipping grunt-contrib-jshint@^0.4.3 /Users/gafrong/Development/toodoo
+12 verbose already installed skipping grunt-contrib-less@~0.11.0 /Users/gafrong/Development/toodoo
+13 verbose already installed skipping grunt-contrib-uglify@^0.2.7 /Users/gafrong/Development/toodoo
+14 verbose already installed skipping grunt-contrib-watch@^0.4.4 /Users/gafrong/Development/toodoo
+15 verbose already installed skipping grunt-conventional-changelog@^0.1.2 /Users/gafrong/Development/toodoo
+16 verbose already installed skipping grunt-html2js@^0.1.9 /Users/gafrong/Development/toodoo
+17 verbose already installed skipping grunt-karma@^0.8.2 /Users/gafrong/Development/toodoo
+18 verbose already installed skipping grunt-ng-annotate@^0.8.0 /Users/gafrong/Development/toodoo
+19 verbose already installed skipping karma@^0.12.9 /Users/gafrong/Development/toodoo
+20 verbose already installed skipping karma-coffee-preprocessor@^0.2.1 /Users/gafrong/Development/toodoo
+21 verbose already installed skipping karma-firefox-launcher@^0.1.3 /Users/gafrong/Development/toodoo
+22 verbose already installed skipping karma-jasmine@^0.1.5 /Users/gafrong/Development/toodoo
+23 verbose already installed skipping express@^4.12.3 /Users/gafrong/Development/toodoo
+24 verbose already installed skipping grunt@~0.4.1 /Users/gafrong/Development/toodoo
+25 verbose already installed skipping grunt-bump@0.0.6 /Users/gafrong/Development/toodoo
+26 verbose already installed skipping grunt-coffeelint@~0.0.10 /Users/gafrong/Development/toodoo
+27 verbose already installed skipping grunt-contrib-clean@^0.4.1 /Users/gafrong/Development/toodoo
+28 verbose already installed skipping grunt-contrib-coffee@^0.7.0 /Users/gafrong/Development/toodoo
+29 verbose already installed skipping grunt-contrib-concat@^0.3.0 /Users/gafrong/Development/toodoo
+30 silly install resolved []
+31 info build /Users/gafrong/Development/toodoo
+32 verbose linkStuff [ false, false, false, '/Users/gafrong/Development' ]
+33 info linkStuff englishkor@0.3.2
+34 verbose linkBins englishkor@0.3.2
+35 verbose linkMans englishkor@0.3.2
+36 verbose rebuildBundles englishkor@0.3.2
+37 verbose rebuildBundles [ '.bin',
+37 verbose rebuildBundles   'coffeelint',
+37 verbose rebuildBundles   'express',
+37 verbose rebuildBundles   'grunt',
+37 verbose rebuildBundles   'grunt-bump',
+37 verbose rebuildBundles   'grunt-coffeelint',
+37 verbose rebuildBundles   'grunt-contrib-clean',
+37 verbose rebuildBundles   'grunt-contrib-coffee',
+37 verbose rebuildBundles   'grunt-contrib-concat',
+37 verbose rebuildBundles   'grunt-contrib-copy',
+37 verbose rebuildBundles   'grunt-contrib-jshint',
+37 verbose rebuildBundles   'grunt-contrib-less',
+37 verbose rebuildBundles   'grunt-contrib-uglify',
+37 verbose rebuildBundles   'grunt-contrib-watch',
+37 verbose rebuildBundles   'grunt-conventional-changelog',
+37 verbose rebuildBundles   'grunt-html2js',
+37 verbose rebuildBundles   'grunt-karma',
+37 verbose rebuildBundles   'grunt-ng-annotate',
+37 verbose rebuildBundles   'karma',
+37 verbose rebuildBundles   'karma-coffee-preprocessor',
+37 verbose rebuildBundles   'karma-firefox-launcher',
+37 verbose rebuildBundles   'karma-jasmine' ]
+38 verbose rebuild bundle /Users/gafrong/Development/toodoo/node_modules/coffeelint
+39 info build /Users/gafrong/Development/toodoo/node_modules/coffeelint
+40 info preinstall coffeelint@1.9.4
+41 verbose linkStuff [ false,
+41 verbose linkStuff   false,
+41 verbose linkStuff   false,
+41 verbose linkStuff   '/Users/gafrong/Development/toodoo/node_modules' ]
+42 info linkStuff coffeelint@1.9.4
+43 verbose linkBins coffeelint@1.9.4
+44 verbose link bins [ { coffeelint: './bin/coffeelint' },
+44 verbose link bins   '/Users/gafrong/Development/toodoo/node_modules/.bin',
+44 verbose link bins   false ]
+45 verbose linkMans coffeelint@1.9.4
+46 verbose rebuildBundles coffeelint@1.9.4
+47 verbose rebuildBundles [ '.bin', 'coffee-script', 'glob', 'ignore', 'optimist', 'resolve' ]
+48 silly gentlyRm /Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint is being purged
+49 verbose gentlyRm don't care about contents; nuking /Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint
+50 silly vacuum-fs purging /Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint
+51 verbose stack Error: EACCES, unlink '/Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint'
+52 verbose cwd /Users/gafrong/Development/toodoo
+53 error Darwin 14.1.0
+54 error argv "node" "/usr/local/bin/npm" "install"
+55 error node v0.10.33
+56 error npm  v2.7.3
+57 error path /Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint
+58 error code EACCES
+59 error errno 3
+60 error Error: EACCES, unlink '/Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint'
+60 error  { [Error: EACCES, unlink '/Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint']
+60 error   errno: 3,
+60 error   code: 'EACCES',
+60 error   path: '/Users/gafrong/Development/toodoo/node_modules/.bin/coffeelint' }
+61 error Please try running this command again as root/Administrator.
+62 verbose exit [ 3, true ]
