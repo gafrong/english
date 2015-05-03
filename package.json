@@ -1,13 +1,11 @@
 {
-  "author": "Josh David Miller",
-  "name": "ngbp",
+  "author": "Ji Lee",
+  "name": "englishkor",
   "version": "0.3.2",
-  "homepage": "https://github.com/ngbp/ngbp",
+  "homepage": "https://github.com/gafrong",
   "licenses": {
-    "type": "MIT",
-    "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
+    "type": "MIT"
   },
-  "bugs": "https://github.com/ngbp/ngbp/issues",
   "repository": {
     "type": "git",
     "url": "git@github.com:ngbp/ngbp.git"
